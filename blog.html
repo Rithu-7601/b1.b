@@ -1,0 +1,194 @@
+<!-- horizontal cards -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+          <!-- above line try container-fluid -->
+
+          <!-- navbar-barand -->
+          <a href="/" class="navbar-brand">
+            <img
+              src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+              alt="Bootstrap-5"
+              width="30"
+              height="24"
+              loading="lazy"
+              class="d-inline-block align-text-top"
+            />
+            Bootstrap-5</a
+          >
+          <!-- end of navbar brand -->
+
+          <!-- toggler button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- end of toggler button -->
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link active">
+                  <i class="fa fa-home" aria-hidden="true"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link">About</a>
+              </li>
+              <!-- dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Help
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <!-- below line dropdown divider -->
+                  <hr class="dorpdown-divider" />
+                  <a class="dropdown-item" href="/collapse-accordion.html"
+                  >collapse & accordion</a
+                >
+                </div>
+              </li>
+              <!-- end of dropdown -->
+
+              <li class="nav-item">
+                <a href="/blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="/courses.html" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- breadcrumb -->
+    <div class="jumbotron">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/pages">Page</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- end of breadcrumb -->
+
+    <!-- horizontal card -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 my-5">
+                <!-- list groups -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-success text-white text-center" aria-current="true">New release!</li>
+                    <li class="list-group-item disabled">Money Heist</li>
+                    <li class="list-group-item active text-white d-flex justify-content-between align-items-center">Peaky blinders
+                        <span class="badge bg-secondary rounded-pill">2M views</span>
+                    </li>
+                    <li class="list-group-item">Rick and Morty</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="card  my-5">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://about.netflix.com/images/meta/netflix-symbol-black.png"
+                          alt="netflix"
+                          class="card-img h-100"
+                        />
+                      </div>
+                      <div class="col-md-8 bg-light">
+                        <div class="card-body">
+                          <h5 class="card-title dispaly-1">
+                            NETFLIX
+                            <span class="badge rounded-pill bg-primary">New update <i class="fa fa-bell" aria-hidden="true"></i>
+                            </h5></span>
+                          <p class="card-text">
+                            <span class="badge bg-success rounded-pill">Series</span>
+                            <span class="badge bg-success rounded-pill">Movies</span>
+                            <span class="badge bg-success rounded-pill">Kids</span>
+                          </p>
+                          <p class="card-text">
+                            At Netflix, we want to entertain the world. Whatever your taste,
+                            and no matter where you live, we give you access to
+                            best-in-class TV shows, movies and documentaries.
+                          </p>
+                          <p class="card-text">
+                              <small class="text-muted float-end">last updated 2hrs ago!</small>
+                          </p>
+                          <div class="clear-fix"></div>
+                          <a href="./index.html" class="btn btn-primary"><i class="fa fa-info-circle pe-3" aria-hidden="true"></i>Explore!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- bootstrap JS -->
+    <script src="assets/bootstrap-5.0.1-dist/js/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

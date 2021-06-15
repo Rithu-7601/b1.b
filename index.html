@@ -1,0 +1,278 @@
+<!-- Navbar,dropdown,button,button groups,badges,alerts-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+          <!-- above line try container-fluid -->
+
+          <!-- navbar-barand -->
+          <a href="/" class="navbar-brand">
+            <img
+              src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+              alt="Bootstrap-5"
+              width="30"
+              height="24"
+              loading="lazy"
+              class="d-inline-block align-text-top"
+            />
+            Bootstrap-5</a
+          >
+          <!-- end of navbar brand -->
+
+          <!-- toggler button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- end of toggler button -->
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link active">
+                  <i class="fa fa-home" aria-hidden="true"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link">About</a>
+              </li>
+              <!-- dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Help
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <!-- below line dropdown divider -->
+                  <hr class="dorpdown-divider" />
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <!-- end of dropdown -->
+
+              <li class="nav-item">
+                <a href="/blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="/courses.html" class="nav-link">Courses</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end of header -->
+
+    <!-- using jumbotron -->
+
+    <div class="jumbotron">
+      <!-- below jumbotron -->
+
+      <div class="container">
+        <!-- alerts -->
+        <div
+          class="alert alert-danger alert-dismissible fade show mt-5"
+          role="alert"
+        >
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+          ></button>
+
+          <p>Registration is currently closed now.Try after sometime!</p>
+          <a href="#" class="alert-link">Learn more</a>
+        </div>
+        <!-- end of alerts -->
+
+        <!-- alert dismissal -->
+        <div
+          class="alert alert-success alert-dismissible fade show mt-5"
+          role="alert"
+        >
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+          ></button>
+
+          <h4>Welcome user,</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+            labore temporibus sit doloribus maiores culpa magnam reprehenderit
+            quas, sunt blanditiis facere illum ipsam repudiandae explicabo
+            maxime. Aliquid totam aperiam odit.
+          </p>
+          <hr class="mt-3" />
+          <p>
+            For Information, <a href="#" class="alert-link">Check out here!</a>
+          </p>
+        </div>
+
+        <!-- end of alert dismissal -->
+
+        <h1 class="display-4">Welcome folks</h1>
+        <p class="lead">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <hr class="mt-5" />
+        <p class="lead">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+        <button type="button" class="btn btn-primary">
+          <i class="fa fa-home" aria-hidden="true"></i>let's start!
+        </button>
+
+        <!-- buttons in bootstrap -->
+        <hr />
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-secondary btn-lg">
+          Secondary
+        </button>
+        <button type="button" class="btn btn-success btn-sm">Success</button>
+        <button type="button" class="btn btn-danger disabled">Danger</button>
+        <button type="button" class="btn btn-warning active">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        <hr />
+        <!-- button tags -->
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <hr />
+        <!-- look at the type values mentioned below -->
+        <input class="btn btn-primary" type="button" value="Input" />
+        <input class="btn btn-primary" type="submit" value="Submit" />
+        <input class="btn btn-primary" type="reset" value="Reset" />
+        <hr />
+
+        <!-- block button-->
+        <div class="d-grid gap-2">
+          <button class="btn btn-warning btn-block">Block button</button>
+        </div>
+        <!-- endof block button -->
+        <hr />
+        <!-- button groups -->
+        <div
+          class="btn-group btn-group-lg"
+          role="group"
+          aria-label="Basic example"
+        >
+          <button type="button" class="btn btn-primary active">Left</button>
+          <!-- dropdown in button gorups -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Middle
+            </button>
+            <div class="dropdown-menu" aria-labelledby="myBtn">
+              <a href="#" class="dropdown-item">Basic</a>
+              <a href="#" class="dropdown-item">Intermediate</a>
+              <a class="dropdown-item" href="/collapse-accordion.html"
+                >collapse & accordion</a
+              >
+            </div>
+          </div>
+
+          <!-- end of dropdown in button groups -->
+          <button type="button" class="btn btn-outline-danger disabled">
+            Right
+          </button>
+        </div>
+        <hr />
+        <!-- badges -->
+        <h3>
+          Example heading
+          <span class="badge rounded-pill bg-secondary">New</span>
+        </h3>
+
+        <button class="btn btn-outline-success">
+          Total videos: <span class="badge badge-success">120</span>
+        </button>
+        <a href="#" class="btn btn-outline-danger"
+          >Upcoming videos: <span class="badge badge-danger">14</span></a
+        >
+        <!-- cards -->
+        <div class="container mb-5 mt-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://html5readiness.com/assets/HTML5_Logo.svg"
+              class="card-img-top mt-5"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap JS -->
+    <script src="assets/bootstrap-5.0.1-dist/js/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
